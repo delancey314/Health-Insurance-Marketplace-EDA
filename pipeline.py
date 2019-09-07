@@ -1,6 +1,14 @@
 import pandas as pd 
 import numpy as np
-year=[2014,2015,2016]
+
+cost2014=pd.read_csv(f'data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+cost2015=pd.read_csv(f'data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+cost2016=pd.read_csv(f'data/2016/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+rules2014=pd.read_csv(f'data/2014/Business_Rules_PUF.csv',low_memory=False)
+rules2015=pd.read_csv(f'data/2015/Business_Rules_PUF.csv',low_memory=False)
+rules2016=pd.read_csv(f'data/2016/Business_Rules_PUF.csv',low_memory=False)
+
+
 files = dict{1:'Benefits_Cost_Sharing_PUF.csv'\
             ,2:'Business_Rules_PUF.csv'\
             ,3:'Network_PUF.csv'\
@@ -8,6 +16,18 @@ files = dict{1:'Benefits_Cost_Sharing_PUF.csv'\
             ,5:'Rate_PUF.csv'
             ,6: 'Service_Area_PUF.csv'\
             }
+def file_selector():
+    number_files =input("'A'll, 'Y'ear or 'F'iles or 'S'ingle? ->")
+    if number_files=='F' or number_files == 'A':
+        year =input('Which year?->')
+    if number_files=='S':
+        file = input(f"Which file? (choose #)\n {files}")
+        df = pd.read_csv(f'data/{year}/{file}',low_memory=False)
+    
+    
+    
+
+    
 
 
 
@@ -79,6 +99,8 @@ def file_chooser(num_files= 1, year=2014, file ='data/Benefits_Cost_Sharing_PUF.
      This function allows the user to select the years and files to use
 
     vars:
+
+
 
     fileloader_counter = 0 displays a welcome. Otherwise it goes to the selection portion.
     year = the user entered year
