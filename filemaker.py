@@ -12,7 +12,7 @@ rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
 rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
 rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015_12_08.csv',low_memory=False)
 
-rulesall=pd.concat([rules2014,rules2015,rules2016])
+rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
 '''
 
 '''
@@ -20,21 +20,41 @@ network2014=pd.read_csv('data/2014/Network_PUF.csv',low_memory=False)
 network2015=pd.read_csv('data/2015/Network_PUF.csv',low_memory=False)
 network2016=pd.read_csv('data/2016/Network_PUF_2015_12_08.csv',low_memory=False)
 
-networkall=pd.concat([network2014,network2015,network2016])
+networkall=pd.concat([network2014,network2015,network2016],sort=False)
 '''
 
-# attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015_03_09.csv',low_memory=False)
-# attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
-# attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
-# rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
-# rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
-# rate2016=pd.read_csv('data/2016/Rate_PUF_2015_12_08.csv',low_memory=False)
-# area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
-# area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
-# area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
-# cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014_12_22.csv',low_memory=False)
-# cross2016=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2015_12_07.csv',low_memory=False)
+'''
+attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015_03_09.csv',low_memory=False)
+attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
+attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF_2015_2_08.csv',low_memory=False)
+
+attrall=pd.concat([attr2014,attr2015,attr2016], sort=False)
+'''
+
+'''
+rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
+rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
+rate2016=pd.read_csv('data/2016/Rate_PUF_2015_12_08.csv',low_memory=False)
+
+rateall=pd.concat([rate2014,rate2015,rate2016], sort=False)
+'''
+
+'''
+area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
+area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
+area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
+
+areaall=pd.concat([area2014,area2015,area2016],sort=False)
+'''
+
+cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014_12_22.csv',low_memory=False)
+cross2016=pd.read_csv('data/2016/Plan_ID_Crosswalk_PUF_2015_12_07.csv',low_memory=False)
+
+crossall=pd.concat([cross1415,cross2016], sort = False)
+
+
 # machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015_12_21.xlsx',low_memory=False)#
+
 
 
 #files = ['data/2014/Service_Area_PUF.csv','data/2015/Service_Area_PUF.csv','data/2016/Service_Area_PUF.csv']
