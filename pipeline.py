@@ -30,18 +30,20 @@ def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
     except:
         break
     else:
-        make_rules(delete_original_df,keep_info,keep_attributes)
-        make_network(delete_original_df,keep_info,keep_attributes)
-        make_attributes(delete_original_df,keep_info,keep_attributes)
-        make_rate(delete_original_df,keep_info,keep_attributes)
-        make_service_area(delete_original_df,keep_info,keep_attributes)
-        make_cross(delete_original_df,keep_info,keep_attributes)
+        make_rules(delete_original_df,keep_attributes)
+        make_network(delete_original_df,keep_attributes)
+        make_attributes(delete_original_df,keep_attributes)
+        make_rate(delete_original_df,keep_attributes)
+        make_service_area(delete_original_df,keep_attributes)
+        make_cross(delete_original_df,keep_attributes)
 
 
-def create_csv_files(dataframe,init='yes',delete_original_df='no',\
-                     keep_attributes= None, init = None, location = None):
+def create_csv_files(dataframe,keep_attributes= None, init = None,\
+                     location = None, name = None,delete_original_df='no):
     if init=='yes':
-        dataframe[0].to_csv
+        dataframe[0].to_csv(path='data/combined/{name}.csv')
+        dataframe[1].to_csv(path='data/info/{name}.csv')
+        
 
 
 def combine_df(df_list,delete_original_df='no'):
@@ -60,7 +62,7 @@ def combine_df(df_list,delete_original_df='no'):
             del original_df
     return combined_df
 
-def make_init_files(dataframe, delete_original_df='no', keep_attributes='no'):
+def make_init_files(dataframe, delete_original_df, keep_attributes,name):
     '''
     Saves the combined dataframe as '{dataframe}.csv'
     Creates new df that stores the dataframes df.info() file that is
@@ -77,7 +79,8 @@ def make_init_files(dataframe, delete_original_df='no', keep_attributes='no'):
 
     information = create_info(dataframe)
     attributes=create_attributes(dataframe)
-    create_csv_files([dataframe,information,attributes],init='yes',delete_original_df, keep_attributes)
+    create_csv_files([dataframe,information,attributes],\
+                      ,delete_original_df, keep_attributes,name,init='yes')
 
 
 
@@ -101,7 +104,7 @@ def make_service_area(delete_original_df,keep_attributes):
     service_area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
     service_area_all=combine_files([service_area2014,service_area2015,service_area2016])
 
-    make_init_files=(service_area_all)
+    make_init_files=(service_area_all,name='service_area_all')
     
 
     rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
