@@ -3,26 +3,25 @@ import numpy as np
 import glob
 
 #cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-
-cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015-12-08.csv',low_memory=False)
-rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
-rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
-rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015-12-08.csv',low_memory=False)
-network2014=pd.read_csv('data/2014/Network_PUF.csv',low_memory=False)
-network2015=pd.read_csv('data/2015/Network_PUF.csv',low_memory=False)
-network2016=pd.read_csv('data/2016/Network_PUF.csv',low_memory=False)
-attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015-03-09.csv',low_memory=False)
-attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
-attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
-rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
-rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
-rate2016=pd.read_csv('data/2016/Rate_PUF.csv',low_memory=False)
-area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
-area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
-area2016=pd.read_csv('data/2016/Service_Area_PUF.csv',low_memory=False)
-cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014-12-22.csv',low_memory=False)
-machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015-12-21.xlsx',low_memory=False)
+#cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+##cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015-12-08.csv',low_memory=False)
+#rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
+#rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
+#rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015-12-08.csv',low_memory=False)
+#network2014=pd.read_csv('data/2014/Network_PUF.csv',low_memory=False)
+#network2015=pd.read_csv('data/2015/Network_PUF.csv',low_memory=False)
+#network2016=pd.read_csv('data/2016/Network_PUF.csv',low_memory=False)
+#attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015-03-09.csv',low_memory=False)
+#attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
+#attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
+#rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
+#rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
+#rate2016=pd.read_csv('data/2016/Rate_PUF.csv',low_memory=False)
+#area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
+#area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
+#area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015-12-08.csv',low_memory=False)
+#cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014-12-22.csv',low_memory=False)
+#machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015-12-21.xlsx',low_memory=False)#
 
 '''
 def importdf(sample_size):
@@ -67,8 +66,8 @@ dfcost = pd.concat(list_cost, axis=0, ignore_index=True)
     dfrate = pd.concat(list_rate, axis=0, ignore_index=True)
 
     #Commented out to stop error function. Can be uncommented if needed.
-    # dfother = pd.concat(list_other, axis=0, ignore_index=True) 
-  
+    # dfother = pd.concat(list_other, axis=0, ignore_index=True)\
+''' 
 df=cost2014.copy(deep=True)
 dfprop = df.info()
 headers=list(df.columns)
@@ -78,10 +77,27 @@ for header in headers:
     uniques.append(col.unique())
 
 uniquedict=dict(zip(headers,uniques))
-df_unique= pd.DataFrame(uniquedict)
-
+#df_unique= pd.DataFrame(uniquedict)
+'''
 if __name__ == "__main__":
     importdf(10)
     #make_attributes()
 
 '''
+import xlsxwriter
+
+workbook = xlsxwriter.Workbook('data/attribute_files/cost2014_attr.xlsx')
+worksheet = workbook.add_worksheet()
+
+
+row = 0
+col = 0
+
+for key in d.keys():
+    row += 1
+    worksheet.write(row, col, key)
+    for item in d[key]:
+        worksheet.write(row, col + 1, item)
+        row += 1
+
+workbook.close()
