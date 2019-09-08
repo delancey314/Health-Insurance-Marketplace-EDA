@@ -1,72 +1,95 @@
 import pandas as pd 
 import numpy as np
-import glob
-
-#cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-#cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-##cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015-12-08.csv',low_memory=False)
-#rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
-#rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
-#rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015-12-08.csv',low_memory=False)
-#network2014=pd.read_csv('data/2014/Network_PUF.csv',low_memory=False)
-#network2015=pd.read_csv('data/2015/Network_PUF.csv',low_memory=False)
-#network2016=pd.read_csv('data/2016/Network_PUF.csv',low_memory=False)
-#attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015-03-09.csv',low_memory=False)
-#attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
-#attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
-#rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
-#rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
-#rate2016=pd.read_csv('data/2016/Rate_PUF.csv',low_memory=False)
-#area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
-#area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
-#area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015-12-08.csv',low_memory=False)
-#cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014-12-22.csv',low_memory=False)
-#machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015-12-21.xlsx',low_memory=False)#
-
-'''
-def importdf(sample_size):
-
-    path = r'data/Combined' # use your path
-    all_files = glob.glob(path + "/*.csv")
-
-    list_cost = []
-    list_rules = []
-    list_network = []
-    list_attributes = []
-    list_service_area = []
-    list_rate = []
-    list_others= []
 
 
-    for filename in all_files:
-        df = pd.read_csv(filename, index_col=None, header=0, low_memory=False)
-        
-        
-        if filename[6]=='u':
-            list_rules.append(df)
-        elif filename[5]=='B':
-            list_cost.append(df)
-        elif filename[5]=='N':
-            list_network.append(df)
-        elif filename[5]=='P':
-            list_attributes.append(df)
-        elif filename[5]=='S':
-            list_service_area.append(df)
-        elif filename[5]=='R':
-            list_rate.append(df)
-        else:
-            list_others.append(df)
+def start_df(delete_original_df='yes', keep_info='no', keep_attributes='yes'):
+    '''
+    Helper function checks to see if files have been loaded into combined df. 
+    If not it loads a related group of files as pandas df,
+    merges them into a single combined df, 
+    saves the combined df to the 'combined' folder,
+    deletes the original file based dfs to release memory, 
+    creates a dictionary of all unique attributes for each 
+    field and writes it to the 'attributes' folder,
+     assigns the df.info() to its own df
+    then adds the df.info to the 'dataset_info.ods' file.
+    This is repeated for all file groups.
 
-dfcost = pd.concat(list_cost, axis=0, ignore_index=True)
+    vars:
+    all three variables are to determine whether to keep created in files
+    after being written to .csv or delete from memory. 
 
-    dfrules = pd.concat(list_rules, axis=0, ignore_index=True)
-    dfnetwork= pd.concat(list_network, axis=0, ignore_index=True)
-    dfattribiutes = pd.concat(list_attributes, axis=0, ignore_index=True)
-    dfservice_area = pd.concat(list_service_area, axis=0, ignore_index=True)
-    dfrate = pd.concat(list_rate, axis=0, ignore_index=True)
+    delete_original_df  = remove original df from memory after a merge. Defaults to 'yes'
+    keep_info = keep  df holding the df.info() in memory.  Defaults to 'no'. 
+    keep_attributes = keep the df used to save the attributes to file.  
+                    Defaults to 'yes'.  The attribute dictionary is kept in memory
+    
+    ''''
+    try:
+        #attributes.xlsx is tested  because it is the last file created.
+        test=pd.read_excel(open('attributes.xlsx','rb'),\
+            sheet_name='service_area_all')
+    except:
+        break
+    else:
+        make_rules(delete_original_df,keep_info,keep_attributes)
+        make_network(delete_original_df,keep_info,keep_attributes)
+        make_attributes(delete_original_df,keep_info,keep_attributes)
+        make_rate(delete_original_df,keep_info,keep_attributes)
+        make_service_area(delete_original_df,keep_info,keep_attributes)
+        make_cross(delete_original_df,keep_info,keep_attributes)
 
-    #Commented out to stop error function. Can be uncommented if needed.
-    # dfother = pd.concat(list_other, axis=0, ignore_index=True)\
+def combine_df(df_list,delete_original_df='no'):
+    '''
+    Combines all df for a given group then returns the combined df.
+    Deletes the individual df to free memory if requested. 
+    
+    vars:
+    df_list = the list of files to combine
+    delete_original_df= deletes the original df. Defaults to 'no'for normal use but
+    'yes' is passed in for the first initialization of files.
+    '''
+    combined_df=pd.concat(df_list,sort=False)
+    if delete_original_df=='yes':
+        for original_df in df_list:
+            del original_df
+    return combined_df
+
+def save_combined_df(combined_df):
+    '''
+    saves the combined dataframe for a group to the 'combined' folder
+    '''
+
+
+
+def make_service_area(delete_original_df,keep_info,keep_attributes):
+    '''
+    makes the service area dfs then sends them to be saved
+    completes all the steps described in start_df for the 'Service Area' files
+     vars:
+    all three variables are to determine whether to keep created in files
+    after being written to .csv or delete from memory. 
+
+    delete_original_df  = keep the combined, merged database in memory. Defaults to 'yes'.
+    keep_info = keep  df holding the df.info() in memory.  Defaults to 'no'. 
+    keep_attributes = keep the df used to save the attributes to file.  
+                    Defaults to 'yes'.  The attribute dictionary is kept in memory
+    '''
+
+    service_area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
+    service_area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
+    service_area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
+    service_area_all=combine_files([service_area2014,service_area2015,service_area2016])
+    
+    save_combined_df(service_area_all)
+    create_attributes(service_area_all)
+    create_info(service_area_all)
+
+    rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
+    rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
+    rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015_12_08.csv',low_memory=False)
+
+rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
 ''' 
 df=cost2014.copy(deep=True)
 dfprop = df.info()
@@ -81,23 +104,6 @@ uniquedict=dict(zip(headers,uniques))
 '''
 if __name__ == "__main__":
     importdf(10)
-    #make_attributes()
+    
 
 '''
-import xlsxwriter
-
-workbook = xlsxwriter.Workbook('data/attribute_files/cost2014_attr.xlsx')
-worksheet = workbook.add_worksheet()
-
-
-row = 0
-col = 0
-
-for key in d.keys():
-    row += 1
-    worksheet.write(row, col, key)
-    for item in d[key]:
-        worksheet.write(row, col + 1, item)
-        row += 1
-
-workbook.close()
