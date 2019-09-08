@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import glob
 
-cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-'''
+#cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+
 cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
 cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015-12-08.csv',low_memory=False)
 rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
@@ -23,9 +23,9 @@ area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
 area2016=pd.read_csv('data/2016/Service_Area_PUF.csv',low_memory=False)
 cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014-12-22.csv',low_memory=False)
 machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015-12-21.xlsx',low_memory=False)
-'''
 
-def make_summary():
+'''
+def importdf(sample_size):
 
     path = r'data/Combined' # use your path
     all_files = glob.glob(path + "/*.csv")
@@ -35,30 +35,40 @@ def make_summary():
     list_network = []
     list_attributes = []
     list_service_area = []
-    list_rules = []
+    list_rate = []
     list_others= []
 
+
     for filename in all_files:
-        df = pd.read_csv(filename, index_col=None, header=0)
+        df = pd.read_csv(filename, index_col=None, header=0, low_memory=False)
+        
         
         if filename[6]=='u':
             list_rules.append(df)
         elif filename[5]=='B':
-            list_costappend(df)
+            list_cost.append(df)
         elif filename[5]=='N':
             list_network.append(df)
         elif filename[5]=='P':
             list_attributes.append(df)
         elif filename[5]=='S':
-            list_service_area = []
-        elif filename[R]=='':
-            list_rules = []
+            list_service_area.append(df)
+        elif filename[5]=='R':
+            list_rate.append(df)
         else:
-            list_others= []
-        li.append(df)
+            list_others.append(df)
 
-frame = pd.concat(li, axis=0, ignore_index=True)
-    
+dfcost = pd.concat(list_cost, axis=0, ignore_index=True)
+
+    dfrules = pd.concat(list_rules, axis=0, ignore_index=True)
+    dfnetwork= pd.concat(list_network, axis=0, ignore_index=True)
+    dfattribiutes = pd.concat(list_attributes, axis=0, ignore_index=True)
+    dfservice_area = pd.concat(list_service_area, axis=0, ignore_index=True)
+    dfrate = pd.concat(list_rate, axis=0, ignore_index=True)
+
+    #Commented out to stop error function. Can be uncommented if needed.
+    # dfother = pd.concat(list_other, axis=0, ignore_index=True) 
+  
 df=cost2014.copy(deep=True)
 dfprop = df.info()
 headers=list(df.columns)
@@ -69,3 +79,9 @@ for header in headers:
 
 uniquedict=dict(zip(headers,uniques))
 df_unique= pd.DataFrame(uniquedict)
+
+if __name__ == "__main__":
+    importdf(10)
+    #make_attributes()
+
+'''
