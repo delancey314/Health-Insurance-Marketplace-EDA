@@ -2,26 +2,39 @@ import pandas as pd
 import numpy as np
 import glob
 chunksize = 10000
-cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
-cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015-12-08.csv',low_memory=False)
+
+#cost2016 has characters that can't be read =  can't find it.
+#cost2016=pd.read_csv('data/2016/Benefits_Cost_Sharing_PUF_2015_12_08.csv',low_memory=False, error_bad_lines = False)
+# cost2014=pd.read_csv('data/2014/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+# cost2015=pd.read_csv('data/2015/Benefits_Cost_Sharing_PUF.csv',low_memory=False)
+'''
 rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
 rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
-rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015-12-08.csv',low_memory=False)
+rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015_12_08.csv',low_memory=False)
+
+rulesall=pd.concat([rules2014,rules2015,rules2016])
+'''
+
+'''
 network2014=pd.read_csv('data/2014/Network_PUF.csv',low_memory=False)
 network2015=pd.read_csv('data/2015/Network_PUF.csv',low_memory=False)
-network2016=pd.read_csv('data/2016/Network_PUF.csv',low_memory=False)
-attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015-03-09.csv',low_memory=False)
-attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
-attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
-rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
-rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
-rate2016=pd.read_csv('data/2016/Rate_PUF.csv',low_memory=False)
-area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
-area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
-area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015-12-08.csv',low_memory=False)
-cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014-12-22.csv',low_memory=False)
-machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015-12-21.xlsx',low_memory=False)#
+network2016=pd.read_csv('data/2016/Network_PUF_2015_12_08.csv',low_memory=False)
+
+networkall=pd.concat([network2014,network2015,network2016])
+'''
+
+# attr2014=pd.read_csv('data/2014/Plan_Attributes_PUF_2014_2015_03_09.csv',low_memory=False)
+# attr2015=pd.read_csv('data/2015/Plan_Attributes_PUF.csv',low_memory=False)
+# attr2016=pd.read_csv('data/2016/Plan_Attributes_PUF.csv',low_memory=False)
+# rate2014=pd.read_csv('data/2014/Rate_PUF.csv',low_memory=False)
+# rate2015=pd.read_csv('data/2015/Rate_PUF.csv',low_memory=False)
+# rate2016=pd.read_csv('data/2016/Rate_PUF_2015_12_08.csv',low_memory=False)
+# area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
+# area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
+# area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
+# cross1415=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2014_12_22.csv',low_memory=False)
+# cross2016=pd.read_csv('data/2015/Plan_Crosswalk_PUF_2015_12_07.csv',low_memory=False)
+# machine16=pd.read_excel('data/2015/Machine_Readable_PUF_2015_12_21.xlsx',low_memory=False)#
 
 
 #files = ['data/2014/Service_Area_PUF.csv','data/2015/Service_Area_PUF.csv','data/2016/Service_Area_PUF.csv']
