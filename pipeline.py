@@ -2,6 +2,16 @@ import pandas as pd
 import numpy as np
 import os.path 
 
+def check_file_exists(path='/data/attribute_files/attributes.xlsx'):
+    '''
+    default path is set to the last file created during projject initialization so
+    function can be used to confirm the initial files need to be made:
+    '''
+        if os.path.isfile(path):
+    
+            return False
+        else: 
+            return True
 
 def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
     '''
@@ -25,12 +35,6 @@ def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
                     Defaults to 'no'.  The attribute dictionary is kept in memory 
     '''
 
-    if os.path.isfile('/data/attribute_files/attributes.xlsx'):
-        '''
-         attributes.xlsx is tested for existence because it is the last one made.
-          If it does, the init files already exist so the function is stopped.   
-        '''
-        return False
     
     else:
         #make_attributes(delete_original_df,keep_attributes)
@@ -67,7 +71,7 @@ def df_to_excel(dataframe,name,path='/data/other/{name}.xlsx',mode= 'a'):
     else:
         with ExcelWriter(path, mode= mode) as writer:
               dataframe.to_excel(writer, sheet_name=name)
-    pass
+    
 
 def combine_df(df_list,delete_original_df='no'):
     '''
@@ -103,7 +107,7 @@ def make_init_files(dataframe, delete_original_df,name):
     '''
 
     information = df_info_save(dataframe,name)
-    attributes=df_unique(dataframe)
+    attributes=df_unique(dataframe,name, path=)
     create_csv_files([dataframe,information,attributes]\
                       ,delete_original_df, keep_attributes,name,init='yes')
     pass
@@ -113,13 +117,25 @@ def df_info_save(dataframe,name):
     info_df=DataFrame(info)
     info.to_csv(path='/data/info/{name}_info.csv')
     del info
-    
+        
     pass
 
 def find_all_uniques(dataframe, name, init='no'):
     headers=list(dataframe.columns)
-    uniques
-    pass
+    uniques=[]
+
+    for header in headers:
+        col=df[header]
+        uniques.append(col.unique())
+
+    uniquedict=dict(zip(headers,uniques))
+    if init == 'yes':
+        unique_df=pd.DataFrame(uniquedict,name)
+        df_to_excel(dataframe,name,path='/data/attribute_files/{name}.xlsx',mode= 'a')
+    return unique_df
+
+
+ 
 
     
 '''
@@ -174,7 +190,28 @@ def make_service_area(delete_original_df,keep_attributes):
 
     rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
 ''' 
+def load_base_files():
+    cost_all= pd.read_csv('data/merged/cost_all.csv',low_memory=False)
+    rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
+    network_all=pd.read_csv('data/merged/network_all.csv',low_memory=False)
+    attr_all=pd.read_csv('data/merged/attr_all.csv',low_memory=False)
+    rate_all=pd.read_csv('data/merged/rate_all.csv',low_memory=False)
+    area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
+    cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
+    machine16=pd.read_csv('data/merged/machine_all.csv',low_memory=False)
 
+    cost_unique= pd.read_csv('data/attribute_files/cost_unique.csv',low_memory=False)
+    rules_unique=pd.read_csv('data/attribute_files/rules_unique.csv',low_memory=False)
+    network_unique=pd.read_csv('data/attribute_files/network_unique.csv',low_memory=False)
+    attr_unique=pd.read_csv('data/attribute_files/attr_unique.csv',low_memory=False)
+    rate_unique=pd.read_csv('data/attribute_files/rate_unique.csv',low_memory=False)
+    area_unique=pd.read_csv('data/attribute_files/area_unique.csv',low_memory=False)
+    cross_unique=pd.read_csv('data/attribute_files/cross_unique.csv',low_memory=False)
+    machine16_unique=pd.read_csv('data/attribute_files/machine_unique.csv',low_memory=False)
+   
 
 if __name__ == "__main__":
-    new_load=initialize_datasets()
+    if check_file_exists == False:
+        new_load=initialize_datasets()
+    else:
+        load_base_files()
