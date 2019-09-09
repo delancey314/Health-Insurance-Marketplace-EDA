@@ -1,5 +1,6 @@
 import pandas as pd 
 import numpy as np
+import os.path
 
 
 def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
@@ -23,28 +24,48 @@ def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
     keep_attributes = keep the df used to save the attributes to file.  
                     Defaults to 'no'.  The attribute dictionary is kept in memory 
     ''''
-    try:
-        #attributes.xlsx is tested  because it is the last file created.
-        test=pd.read_excel(open('/data/attribute_files/'attributes.xlsx','rb'),\
-            sheet_name='service_area_all')
-    except:
+    if path.isfile('/data/attribute_files/attributes.xlsx'):
+        '''
+         attributes.xlsx is tested for existence because it is the last one made.
+          If it does, the init files already exist so the function is stopped.   
+        '''
         break
+    
     else:
-        make_rules(delete_original_df,keep_attributes)
-        make_network(delete_original_df,keep_attributes)
         make_attributes(delete_original_df,keep_attributes)
+        make_network(delete_original_df,keep_attributes)
+        make_rules(delete_original_df,keep_attributes)
         make_rate(delete_original_df,keep_attributes)
         make_service_area(delete_original_df,keep_attributes)
         make_cross(delete_original_df,keep_attributes)
+    pass
 
 
-def create_csv_files(dataframe,keep_attributes= None, init = None,\
-                     location = None, name = None,delete_original_df='no):
+def create_csv_files(dataframe,delete_original_df='no', keep_attributes= None, init = None,\
+                     location = None, name = None):
     if init=='yes':
-        dataframe[0].to_csv(path='data/combined/{name}.csv')
-        dataframe[1].to_csv(path='data/info/{name}.csv')
-        
+        idx=0
+        for frame in dataframe:
+            if idx ==0:
+                frame.to_csv(path='/data/combined/{name}.csv')
+            elif idx == 1:
+                frame.to_csv(path='/data/info/{name}_info.csv')
+            else:
+                df_to_excel(frame,name,path='/data/attributes/attributes.xlsx')
+            idx +=1
+    else:
+        frame.to_csv(path='/data/other/{name}_info.csv')
+    pass
 
+def df_to_excel(dataframe,name,path='/data/other/{name}.xlsx',mode= 'a'):
+    writer = pd.ExcelWriter(path, engine='openpyxl')
+    if path.isfile(path):
+        with ExcelWriter(path, mode= mode) as writer:
+              dataframe.to_excel(writer, sheet_name=name)
+    else:
+        with ExcelWriter(path, mode= mode) as writer:
+              dataframe.to_excel(writer, sheet_name=name)
+    pass
 
 def combine_df(df_list,delete_original_df='no'):
     '''
@@ -61,14 +82,16 @@ def combine_df(df_list,delete_original_df='no'):
         for original_df in df_list:
             del original_df
     return combined_df
+    pass
 
-def make_init_files(dataframe, delete_original_df, keep_attributes,name):
+
+def make_init_files(dataframe, delete_original_df,name):
     '''
-    Saves the combined dataframe as '{dataframe}.csv'
+    Saves the combined dataframe as '{name}.csv'
     Creates new df that stores the dataframes df.info() file that is
-    saved as '{dataframe}_info.csv'
+    saved as '{name}_info.csv'
     Creates a a dictionary and df that stores all unique attributes.
-    the df is saved as '{dataframe}_attributes.xlsx'.
+    the df is saved as '{name}_attributes.xlsx'.
     
     vars:
     dataframe = name of the combined dataframe
@@ -77,10 +100,46 @@ def make_init_files(dataframe, delete_original_df, keep_attributes,name):
 
     '''
 
-    information = create_info(dataframe)
-    attributes=create_attributes(dataframe)
+    information = df_info_save(dataframe,name)
+    attributes=df_unique(dataframe)
+    create_csv_files([dataframe,information,attributes]\
+                      ,delete_original_df, keep_attributes,name,init='yes')
+
+def df_info_save(dataframe,name):
+    info=dataframe.info()
+    info.to_csv(path='/data/info/{name}_info.csv')
+    del info
+    
+    pass
+
+def find_all_uniques(dataframe, name, init='no')
+    headers=list(dataframe.columns)
+    uniques
+    pass
+
     create_csv_files([dataframe,information,attributes],\
                       ,delete_original_df, keep_attributes,name,init='yes')
+
+'''
+
+headers=list(df.columns)
+uniques=[]
+for header in headers:
+    col=df[header]
+    uniques.append(col.unique())
+
+uniquedict=dict(zip(headers,uniques))
+#df_unique= pd.DataFrame(uniquedict)
+'''
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,8 +152,7 @@ def make_service_area(delete_original_df,keep_attributes):
     after being written to .csv or delete from memory. 
 
     delete_original_df  = keep the combined, merged database in memory. 
-                        Defaults to 'no'.
-    keep_info = keep  df holding the df.info() in memory.  Defaults to 'no'. 
+                        Defaults to 'no'
     keep_attributes = keep the df used to save the attributes to file.  
                     Defaults to 'no'.  The attribute dictionary is kept in memory
     '''
@@ -105,24 +163,16 @@ def make_service_area(delete_original_df,keep_attributes):
     service_area_all=combine_files([service_area2014,service_area2015,service_area2016])
 
     make_init_files=(service_area_all,name='service_area_all')
-    
 
+    
+'''
     rules2014=pd.read_csv('data/2014/Business_Rules_PUF.csv',low_memory=False)
     rules2015=pd.read_csv('data/2015/Business_Rules_PUF_Reformat.csv',low_memory=False)
     rules2016=pd.read_csv('data/2016/Business_Rules_PUF_2015_12_08.csv',low_memory=False)
 
-rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
+    rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
 ''' 
-df=cost2014.copy(deep=True)
-dfprop = df.info()
-headers=list(df.columns)
-uniques=[]
-for header in headers:
-    col=df[header]
-    uniques.append(col.unique())
 
-uniquedict=dict(zip(headers,uniques))
-#df_unique= pd.DataFrame(uniquedict)
 '''
 if __name__ == "__main__":
     importdf(10)
