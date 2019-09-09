@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np
-import os.path
+import os.path 
 
 
 def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
@@ -23,22 +23,24 @@ def initialize_datasets(delete_original_df='yes', keep_attributes='no'):
     delete_original_df  = remove original df from memory after a merge. Defaults to 'yes'
     keep_attributes = keep the df used to save the attributes to file.  
                     Defaults to 'no'.  The attribute dictionary is kept in memory 
-    ''''
-    if path.isfile('/data/attribute_files/attributes.xlsx'):
+    '''
+
+    if os.path.isfile('/data/attribute_files/attributes.xlsx'):
         '''
          attributes.xlsx is tested for existence because it is the last one made.
           If it does, the init files already exist so the function is stopped.   
         '''
-        break
+        return False
     
     else:
-        make_attributes(delete_original_df,keep_attributes)
-        make_network(delete_original_df,keep_attributes)
-        make_rules(delete_original_df,keep_attributes)
-        make_rate(delete_original_df,keep_attributes)
+        #make_attributes(delete_original_df,keep_attributes)
+        #make_network(delete_original_df,keep_attributes)
+        #make_rules(delete_original_df,keep_attributes)
+        #make_rate(delete_original_df,keep_attributes)
         make_service_area(delete_original_df,keep_attributes)
-        make_cross(delete_original_df,keep_attributes)
-    pass
+        #make_cross(delete_original_df,keep_attributes)
+        
+        return True
 
 
 def create_csv_files(dataframe,delete_original_df='no', keep_attributes= None, init = None,\
@@ -104,22 +106,22 @@ def make_init_files(dataframe, delete_original_df,name):
     attributes=df_unique(dataframe)
     create_csv_files([dataframe,information,attributes]\
                       ,delete_original_df, keep_attributes,name,init='yes')
+    pass
 
 def df_info_save(dataframe,name):
     info=dataframe.info()
+    info_df=DataFrame(info)
     info.to_csv(path='/data/info/{name}_info.csv')
     del info
     
     pass
 
-def find_all_uniques(dataframe, name, init='no')
+def find_all_uniques(dataframe, name, init='no'):
     headers=list(dataframe.columns)
     uniques
     pass
 
-    create_csv_files([dataframe,information,attributes],\
-                      ,delete_original_df, keep_attributes,name,init='yes')
-
+    
 '''
 
 headers=list(df.columns)
@@ -160,9 +162,9 @@ def make_service_area(delete_original_df,keep_attributes):
     service_area2014=pd.read_csv('data/2014/Service_Area_PUF.csv',low_memory=False)
     service_area2015=pd.read_csv('data/2015/Service_Area_PUF.csv',low_memory=False)
     service_area2016=pd.read_csv('data/2016/ServiceArea_PUF_2015_12_08.csv',low_memory=False)
-    service_area_all=combine_files([service_area2014,service_area2015,service_area2016])
+    service_area_all=combine_df([service_area2014,service_area2015,service_area2016],delete_original_df='yes')
 
-    make_init_files=(service_area_all,name='service_area_all')
+    init_files=make_init_files(service_area_all, name='service_area_all', delete_original_df='no')
 
     
 '''
@@ -173,9 +175,6 @@ def make_service_area(delete_original_df,keep_attributes):
     rulesall=pd.concat([rules2014,rules2015,rules2016],sort=False)
 ''' 
 
-'''
-if __name__ == "__main__":
-    importdf(10)
-    
 
-'''
+if __name__ == "__main__":
+    new_load=initialize_datasets()
