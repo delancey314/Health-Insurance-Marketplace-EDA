@@ -1,0 +1,379 @@
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Ex-Spouse,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Brother or Sister,Yes;Ward,Yes;Self,Yes;Child,Yes;Dependent on a Minor Dependent,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Nephew or Niece,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Collateral Dependent,No;Life Partner,No;Annultant,No
+Spouse,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Other Relationship,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,No;Other Relationship,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Ex-Spouse,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes;Other Relationship,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,Yes;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,Yes;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Guardian,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Self,Yes;Child,No;Sponsored Dependent,No;Collateral Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Ward,No;Child,No;Guardian,Yes;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No;Other Relationship,No
+Spouse,No;Father or Mother,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No;Other Relationship,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Child,No;Guardian,Yes;Life Partner,No
+Spouse,Yes;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No;Other Relationship,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Life Partner,No
+Brother or Sister,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes
+Adopted Child,Yes;Self,No;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Brother or Sister,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,Yes;Life Partner,No
+Self,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Ward,No;Self,Yes;Child,No;Ex-Spouse,No
+Adopted Child,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Father or Mother,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No;Other Relationship,No
+Brother or Sister,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Child,No;Guardian,Yes;Life Partner,No
+Brother or Sister,No;Self,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Ex-Spouse,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,Yes;Dependent on a Minor Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,Yes;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Self,Yes;Child,No;Sponsored Dependent,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Other Relative,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No;Other Relationship,No
+Spouse,Yes;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Ex-Spouse,No;Court Appointed Guardian,No;Other Relationship,No
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,Yes;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Collateral Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,Yes
+Spouse,No;Father or Mother,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,No;Court Appointed Guardian,No
+Spouse,Yes;Adopted Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Stepparent,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Other Relationship,No
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Brother or Sister,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Ex-Spouse,No;Guardian,No;Court Appointed Guardian,No;Collateral Dependent,No;Life Partner,Yes;Other Relationship,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No;Other Relationship,No
+Spouse,No;Adopted Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Ex-Spouse,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,Yes;Court Appointed Guardian,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Life Partner,Yes
+Spouse,Yes;Father or Mother,Yes;Grandfather or Grandmother,Yes;Grandson or Granddaughter,Yes;Uncle or Aunt,Yes;Nephew or Niece,Yes;Cousin,Yes;Adopted Child,Yes;Foster Child,Yes;Son-in-Law or Daughter-in-Law,Yes;Brother-in-Law or Sister-in-Law,Yes;Father-in-Law or Mother-in-Law,Yes;Brother or Sister,Yes;Ward,Yes;Stepparent,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Sponsored Dependent,Yes;Dependent on a Minor Dependent,Yes;Ex-Spouse,Yes;Guardian,Yes;Court Appointed Guardian,Yes;Collateral Dependent,Yes;Life Partner,Yes;Annultant,Yes;Trustee,Yes;Other Relationship,Yes;Other Relative,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,No;Other Relative,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Brother-in-Law or Sister-in-Law,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Ex-Spouse,No;Collateral Dependent,No;Life Partner,No;Annultant,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No;Annultant,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes;Other Relationship,No
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Guardian,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Father or Mother,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Ex-Spouse,No;Life Partner,No;Other Relationship,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes;Other Relationship,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,Yes;Other Relationship,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Self,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Collateral Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Nephew or Niece,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Ex-Spouse,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,Yes;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Guardian,Yes;Life Partner,Yes
+Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes;Other Relative,Yes
+Spouse,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,Yes;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Adopted Child,Yes;Foster Child,Yes;Stepson or Stepdaughter,Yes;Child,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+
+Spouse,No;Adopted Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Child,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No;Life Partner,No
+Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No
+Adopted Child,Yes;Foster Child,Yes;Son-in-Law or Daughter-in-Law,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Dependent on a Minor Dependent,Yes
+Spouse,Yes;Adopted Child,Yes;Ward,Yes;Self,Yes;Child,Yes;Ex-Spouse,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,Yes;Father or Mother,No;Adopted Child,No;Stepparent,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Sponsored Dependent,Yes;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No
+Adopted Child,No;Foster Child,No;Brother or Sister,No;Child,No
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Ex-Spouse,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Self,Yes;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No;Other Relationship,No
+Spouse,Yes;Adopted Child,Yes;Ward,No;Self,Yes;Child,Yes;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,Yes;Nephew or Niece,Yes;Adopted Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Dependent on a Minor Dependent,Yes;Guardian,Yes;Life Partner,Yes
+Spouse,Yes;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes
+Spouse,No;Father or Mother,No;Grandfather or Grandmother,No;Grandson or Granddaughter,No;Adopted Child,No;Stepparent,No;Stepson or Stepdaughter,No;Self,No;Child,No;Guardian,No;Court Appointed Guardian,No
+Adopted Child,Yes;Brother or Sister,No;Self,No;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Guardian,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Ex-Spouse,No;Guardian,No;Life Partner,No;Annultant,No
+Brother or Sister,No;Ward,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Collateral Dependent,Yes;Life Partner,No;Other Relationship,No
+Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Father or Mother,No;Adopted Child,No;Stepparent,No;Stepson or Stepdaughter,No;Child,No;Ex-Spouse,No;Court Appointed Guardian,No
+Spouse,No;Father or Mother,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Father-in-Law or Mother-in-Law,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,No;Ex-Spouse,No;Collateral Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Ex-Spouse,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,Yes;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes
+Adopted Child,Yes;Foster Child,Yes;Son-in-Law or Daughter-in-Law,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Sponsored Dependent,Yes;Dependent on a Minor Dependent,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Cousin,No;Brother or Sister,No;Self,No
+Spouse,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Brother or Sister,No;Ward,Yes;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Father or Mother,No;Grandfather or Grandmother,No;Grandson or Granddaughter,No;Uncle or Aunt,No;Nephew or Niece,No;Cousin,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Brother-in-Law or Sister-in-Law,No;Father-in-Law or Mother-in-Law,No;Brother or Sister,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Guardian,No;Court Appointed Guardian,No;Collateral Dependent,No;Life Partner,No;Annultant,No;Trustee,No;Other Relationship,No;Other Relative,No
+Spouse,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes
+Spouse,No;Father or Mother,No;Grandfather or Grandmother,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Guardian,No;Court Appointed Guardian,No;Life Partner,No;Other Relationship,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Life Partner,No;Sponsored Dependent,No;Child,No;Self,No;Stepson or Stepdaughter,No;Ward,No;Adopted Child,No;Spouse,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Ex-Spouse,No;Court Appointed Guardian,Yes;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Self,No;Child,No
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Guardian,No;Court Appointed Guardian,No
+Spouse,Yes;Father or Mother,Yes;Nephew or Niece,Yes;Adopted Child,Yes;Foster Child,Yes;Ward,Yes;Stepparent,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Guardian,Yes;Court Appointed Guardian,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Guardian,No;Life Partner,No
+Spouse,Yes;Adopted Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Nephew or Niece,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Life Partner,No
+Adopted Child,Yes;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Dependent on a Minor Dependent,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Father or Mother,No;Grandfather or Grandmother,Yes;Adopted Child,No;Stepson or Stepdaughter,Yes;Court Appointed Guardian,Yes;Other Relationship,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No
+Spouse,No;Adopted Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Court Appointed Guardian,Yes;Life Partner,Yes
+Spouse,Yes;Father or Mother,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Guardian,No;Court Appointed Guardian,No;Collateral Dependent,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Nephew or Niece,No;Adopted Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Adopted Child,Yes;Child,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Other Relationship,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No;Other Relationship,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Child,No;Sponsored Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Ex-Spouse,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Court Appointed Guardian,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Other Relationship,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No;Other Relationship,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Brother or Sister,No;Ward,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Collateral Dependent,Yes;Life Partner,No;Other Relationship,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Adopted Child,Yes;Ward,Yes;Self,Yes;Child,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,No;Other Relationship,No
+Spouse,No;Adopted Child,No;Brother or Sister,No;Ward,No;Child,No;Life Partner,No
+Spouse,Yes;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Other Relative,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Other Relationship,No
+Spouse,No;Grandson or Granddaughter,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No;Dependent on a Minor Dependent,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,Yes;Life Partner,Yes
+Spouse,No;Adopted Child,No;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Other Relationship,No;Life Partner,No
+Spouse,No;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes;Other Relationship,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes;Other Relationship,Yes
+Spouse,No;Father or Mother,No;Grandfather or Grandmother,No;Grandson or Granddaughter,No;Uncle or Aunt,No;Nephew or Niece,No;Cousin,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Brother-in-Law or Sister-in-Law,No;Father-in-Law or Mother-in-Law,No;Brother or Sister,No;Ward,No;Stepparent,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Guardian,No;Court Appointed Guardian,No;Collateral Dependent,No;Life Partner,No;Annultant,No;Trustee,No;Other Relationship,No;Other Relative,No
+Spouse,Yes;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,Yes;Self,No;Child,No;Ex-Spouse,No
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No;Other Relative,Yes
+Spouse,No;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Brother or Sister,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No;Ex-Spouse,No;Collateral Dependent,No;Life Partner,No;Annultant,No
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Foster Child,Yes;Ward,Yes;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,Yes;Stepson or Stepdaughter,No;Self,Yes;Child,No;Dependent on a Minor Dependent,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,Yes;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,No;Child,No;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Court Appointed Guardian,Yes;Life Partner,Yes
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Court Appointed Guardian,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Ward,No;Stepson or Stepdaughter,Yes;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Grandson or Granddaughter,Yes;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Child,No
+Spouse,Yes;Adopted Child,No;Foster Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Foster Child,No;Ward,No;Self,Yes;Child,No;Dependent on a Minor Dependent,No;Life Partner,Yes
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No
+Spouse,No;Adopted Child,No;Self,No;Child,No;Sponsored Dependent,No;Dependent on a Minor Dependent,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Adopted Child,Yes;Foster Child,Yes;Stepson or Stepdaughter,Yes;Self,Yes;Child,Yes;Life Partner,No
+Spouse,No;Adopted Child,No;Ward,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Stepson or Stepdaughter,No;Child,No;Court Appointed Guardian,Yes;Life Partner,No
+Spouse,No;Grandson or Granddaughter,Yes;Nephew or Niece,Yes;Adopted Child,No;Foster Child,No;Brother or Sister,Yes;Ward,No;Stepson or Stepdaughter,No;Self,No;Child,No;Dependent on a Minor Dependent,Yes;Ex-Spouse,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Foster Child,No;Son-in-Law or Daughter-in-Law,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Sponsored Dependent,No;Court Appointed Guardian,No;Life Partner,No
+Spouse,No;Grandson or Granddaughter,No;Adopted Child,No;Ward,No;Stepson or Stepdaughter,No;Self,Yes;Child,No;Life Partner,No
+Spouse,No;Adopted Child,No;Self,No;Child,No;Life Partner,No
