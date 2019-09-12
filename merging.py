@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd 
 import csv
 import folium
-'''This python script loads the saved merged files for 2014-2017 CMS Marketplace
+'''
+This python script loads the saved merged files for 2014-2017 CMS Marketplace
 Data and cleans it. Cleaning includes dropping unnecessary columns and rows as well
 as creating universal keys.
     At this point, there is a separate function for each filegroup because the cleaning
@@ -123,10 +124,10 @@ def hot_cat_cohabitation(cohabitation_fields,cohab):
 
 '''
 The functions below should also be moved into their own class.  They take a list
-fields, map them on  US and Colorado maps, and save the maps
+fields, map them on  US and state maps, and save the maps
 '''
-def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016]\
-            title='Cohabitation Criteria for '):
+def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016,'all']\
+            title='Cohabitation Criteria for ', map_area = 'US'):
 
     #The list below is a manually cleaned version of cohabitation_fields
     default_fields =['Spouse,Yes','Spouse,No','Spouse-YN', 'Adopted Child,Yes',\
@@ -161,6 +162,12 @@ def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016]\
     
     if not len(input_fields)>0:
         input_fields = default_fields.copy()
+    
+
+    for field in input_fields:
+        initialize_map_conditions(map_area):
+        map_list=map_series(dataframe,field,years)
+        save_maps(map_list,map_area,years)
     
     
 
