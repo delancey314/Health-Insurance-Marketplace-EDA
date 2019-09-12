@@ -6,24 +6,6 @@ import numpy as np
 
 
 
-def clean_cross(cleaning_file):
-
-    cross_drop=['Unnamed: 0','MetalLevel_2015','MetalLevel_2016','IssuerID_AgeOff2016','MultistatePlan_AgeOff2016','ChildAdultOnly_AgeOff2016','MetalLevel_2014','AgeOffPlanID_2015','IssuerID_AgeOff2015','MultistatePlan_AgeOff2015','MetalLevel_AgeOff2015','ChildAdultOnly_AgeOff2015']
-    cleaning_file.drop(cross_drop, axis=1, inplace = True)
-    cleaning_file.sort_values('PlanID_2015', inplace=True)
-    cleaning_file[cleaning_file.DentalPlan != 'Yes']
-    """
-    crosswalk levels 0,1,2&3 mean the plan stayed the same across all 3 years.
-    They varied by geographical level - zip code up to national
-    """
-    cleaning_file[cleaning_file.CrosswalkLevel <4]
-
-
-
-
-
-cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
-cross_clean=clean_cross(cross_all)
 
 
 """  

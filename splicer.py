@@ -9,10 +9,9 @@ with open('cohabitation.csv', 'r') as csvfile:
         for value in line:
             output_list =value.split(',')
             import_dict[output_list[0]]=output_list[1]
-Cohabitation_hot=import_dict.keys()
-cohab_list=[]
-index=len(Cohabitation_hot)
-for idx in index:
+Cohabitation_hot=list(import_dict.keys())
+
+for idx in range(len(Cohabitation_hot)):
 
     new_yes = Cohabitation_hot[idx] +', Yes'
     new_no= Cohabitation_hot[idx]+', No'

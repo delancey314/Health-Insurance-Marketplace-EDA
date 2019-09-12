@@ -1,0 +1,6 @@
+import numpy as np 
+import pandas as pd 
+import csv
+
+
+area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)

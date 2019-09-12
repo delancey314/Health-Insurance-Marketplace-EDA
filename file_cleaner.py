@@ -27,12 +27,13 @@ def file_cleaner():
     clean_rules(rules_all)
 
 
-def clean_rules(cleaning_file):
+def clean_rules(rules_all):
+    cleaning_file=rules_all.copy()
     rules_drop=['SourceName','VersionNum','ImportDate','IssuerId2',	'MarketCoverage','DentalOnly','Unnamed: 0','RowNumber']
     cleaning_file.drop(rules_drop, axis=1, inplace = True)
     cleaning_file.sort_values("StandardComponentId", inplace=True) 
     cleaning_file.drop_duplicates(keep=False,inplace=True) 
-    cleaning_file[rules_all.DentalOnlyPlan != "Yes"]
+    cleaning_file[cleaning_file['DentalOnlyPlan'] != "Yes"]
     #Data Dictionary says to replace any blanks/NaN with No
     cleaning_file['DentalOnlyPlan'].fillna('No', inplace=True)
     cleaning_file.reset_index()
@@ -44,7 +45,7 @@ def clean_rules(cleaning_file):
    
 
 def cohabitation_matrix(rules_cleaned):
-    cohab = rules_cleaned
+    cohab = rules_cleaned.copy()
     #cohab.drop('EnrolleeContractRateDeterminationRule','MinimumTobaccoFreeMonthsRule','DentalOnlyPlan')
     cohabitation_fields=cohab_unique()
     cohab_new_matrix=hot_cat_cohabitation(cohabitation_fields,cohab)
@@ -66,16 +67,13 @@ index=len(cohabitation_fields)
     
 
 rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
-
 rules_cleaned=clean_rules(rules_all)
+
+
+
 cohabitation_df=cohabitation_matrix(rules_cleaned)
 cohabitation_df['DomParAsSpouse']= cohabitation_df['DomesticPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0)
 cohabitation_df['SameSexAsSpouse']= cohabitation_df['SameSexPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0) 
-
-
-
-
-
 depmaxage_df=cohabitation_df[cohabitation_df['DependentMaximumAgRule'] != 'Not Applicable']
 
 
