@@ -1,7 +1,26 @@
 import numpy as np 
 import pandas as pd 
 import csv
+import folium
+'''This python script loads the saved merged files for 2014-2017 CMS Marketplace
+Data and cleans it. Cleaning includes dropping unnecessary columns and rows as well
+as creating universal keys.
+    At this point, there is a separate function for each filegroup because the cleaning
+ process is different. A future project will be merging this with 'filemaker.py' as a
+ class.
+'''
 
+'''
+def clean_files():
+    area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
+    area_clean=clean_area(area_all)
+    network_all=pd.read_csv('data/merged/network_all.csv',low_memory=False)
+    network_clean=clean_network(network_all)
+    cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
+    cross_clean=clean_cross(cross_all) """
+    rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
+    rules_cleaned=clean_rules(rules_all)
+'''
 
 
 
@@ -19,7 +38,6 @@ def clean_area(area_all):
     return cleaning_data
     
     
-    #ataframe["period"] = dataframe["Year"].map(str) + dataframe["quarter"]
 def clean_network(network_all):
     cleaning_data=network_all.copy()
     drop_list=['Unnamed: 0','SourceName','VersionNum','ImportDate','IssuerId2',\
@@ -37,8 +55,8 @@ def clean_cross(cross_all):
     cleaning_file.drop(cross_drop, axis=1, inplace = True)
     cleaning_file.sort_values('PlanID_2015', inplace=True)
     """
-    crosswalk levels 0,1,2&3 mean the plan stayed the same across all 3 years.
-    They varied by geographical level - zip code up to national
+    crosswalk levels 0,1,2,&,3 mean the plan stayed the same across all 3 years.
+    They varied by geographical level - national, state, county, zip code.
     """
     cleaning_file[cleaning_file['CrosswalkLevel']<4]
 
@@ -54,10 +72,24 @@ def clean_rules(rules_all):
     #Data Dictionary says to replace any blanks/NaN with No
     cleaning_file['DentalOnlyPlan'].fillna('No', inplace=True)
     
-
     return cleaning_file
 
 
+def create_cohabitation_dataframes(rules_cleaned)
+
+    '''
+    The rules filegroup includes a field on whether cohabitation is required to be
+    on the insurance policy for various relationships to the policyholder. 
+    relationship-YN is an indicator that policy allows that type of relative to 
+    be included.
+    ''' 
+    cohabitation_df=cohabitation_matrix(rules_cleaned)
+    cohabitation_df['DomParAsSpouse']= cohabitation_df['DomesticPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0)
+    cohabitation_df['SameSexAsSpouse']= cohabitation_df['SameSexPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0) 
+    depmaxage_df=cohabitation_df[cohabitation_df['DependentMaximumAgRule'] != 'Not Applicable']
+    cohabitiation_fields=list(cohabitation_df.columns.values)
+
+    
 
 def cohabitation_matrix(rules_cleaned):
     cohab = rules_cleaned.copy()
@@ -89,11 +121,64 @@ def hot_cat_cohabitation(cohabitation_fields,cohab):
     return cohab
 
 
-area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
-area_clean=clean_area(area_all)
-network_all=pd.read_csv('data/merged/network_all.csv',low_memory=False)
-network_clean=clean_network(network_all)
-cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
-cross_clean=clean_cross(cross_all)
-rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
-rules_cleaned=clean_rules(rules_all)
+'''
+The functions below should also be moved into their own class.  They take a list
+fields, map them on  US and Colorado maps, and save the maps
+'''
+def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016]\
+            title='Cohabitation Criteria for '):
+
+    #The list below is a manually cleaned version of cohabitation_fields
+    default_fields =['Spouse,Yes','Spouse,No','Spouse-YN', 'Adopted Child,Yes',\
+    'Adopted Child,No', 'Adopted Child-YN','Stepson or Stepdaughter,Yes',\
+    'Stepson or Stepdaughter,No','Stepson or Stepdaughter-YN','Self,Yes',\
+    'Self,No','Self-YN','Child,Yes','Child,No','Child-YN','Life Partner,Yes',\
+    'Life Partner,No','Life Partner-YN','Grandson or Granddaughter,Yes',\
+    'Grandson or Granddaughter,No','Grandson or Granddaughter-YN','Ward,Yes',\
+    'Ward,No','Ward-YN','Dependent on a Minor Dependent,Yes',\
+    'Dependent on a Minor Dependent,No','Dependent on a Minor Dependent-YN',\
+    'Guardian,Yes','Guardian,No','Guardian-YN','Court Appointed Guardian,Yes',\
+    'Court Appointed Guardian,No','Court Appointed Guardian-YN',\
+    'Sponsored Dependent,Yes','Sponsored Dependent,No','Sponsored Dependent-YN',\
+    'Foster Child,Yes','Foster Child,No','Foster Child-YN',\
+    'Son-in-Law or Daughter-in-Law,Yes','Son-in-Law or Daughter-in-Law,No',\
+    'Son-in-Law or Daughter-in-Law-YN','Ex-Spouse,Yes','Ex-Spouse,No',\
+    'Ex-Spouse-YN','Brother or Sister,Yes','Brother or Sister,No',\
+    'Brother or Sister-YN','Nephew or Niece,Yes','Nephew or Niece,No',\
+    'Nephew or Niece-YN','Collateral Dependent,Yes','Collateral Dependent,No',\
+    'Collateral Dependent-YN','Annultant,Yes','Annultant,No','Annultant-YN',\
+    'Other Relationship,Yes','Other Relationship,No','Other Relationship-YN',\
+    'Father or Mother,Yes','Father or Mother,No','Father or Mother-YN',\
+    'Other Relative,Yes','Other Relative,No','Other Relative-YN',
+    'Stepparent,Yes','Stepparent,No','Stepparent-YN',\
+    'Grandfather or Grandmother,Yes','Grandfather or Grandmother,No',\
+    'Grandfather or Grandmother-YN','Uncle or Aunt,Yes','Uncle or Aunt,No',\
+    'Uncle or Aunt-YN','Cousin,Yes','Cousin,No','Cousin-YN',\
+    'Brother-in-Law or Sister-in-Law,Yes','Brother-in-Law or Sister-in-Law,No',\
+    'Brother-in-Law or Sister-in-Law-YN','Father-in-Law or Mother-in-Law,Yes',\
+    'Father-in-Law or Mother-in-Law,No','Father-in-Law or Mother-in-Law-YN',\
+    'Trustee,Yes','Trustee,No','Trustee-YN','DomParAsSpouse','SameSexAsSpouse']
+    
+    if not len(input_fields)>0:
+        input_fields = default_fields.copy()
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    clean_files()
+    create_cohabitation_dataframes()
+    map_maker(cohabitation_df,)
+
+    
+
