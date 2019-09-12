@@ -124,7 +124,7 @@ def hot_cat_cohabitation(cohabitation_fields,cohab):
 
 '''
 The functions below should also be moved into their own class.  They take a list
-fields, map them on  US and state maps, and save the maps
+fields, map them on US and state maps, and save the maps
 '''
 def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016,'all']\
             title='Cohabitation Criteria for ', map_area = 'US'):
@@ -165,9 +165,29 @@ def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016,'all
     
 
     for field in input_fields:
-        initialize_map_conditions(map_area):
-        map_list=map_series(dataframe,field,years)
-        save_maps(map_list,map_area,years)
+        map_design=initialize_map_conditions(map_area):
+        map_list=map_series(dataframe,field,years,map_design)
+        save_maps(map_list,map_area,years,map_design,title)
+
+
+def initialize_map_conditions(map_area='US'):
+    '''
+    returns the longitude and latitude and zoom level for each map. 
+    More areas will be added.
+    '''
+    aliases =['United States','USA','America','United States of America']
+    if map_area in aliases:
+        map_area = 'US'
+    map_dict={'US':'location=[48, -102], zoom_start=3'\
+                'CO':'location=[]39	-106], zoom_start=6'}
+
+    return map_dict[map_area]
+
+
+'
+
+
+
     
     
 
