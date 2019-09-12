@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd 
 import csv
 import folium
+import pdb
 '''
 This python script loads the saved merged files for 2014-2017 CMS Marketplace
 Data and cleans it. Cleaning includes dropping unnecessary columns and rows as well
@@ -192,18 +193,19 @@ def map_series(dataframe,field,years,location=[48, -102], zoom_start=3):
     
     url ='https://raw.githubusercontent.com/python-visualization/folium/master/examples/data'
     state_geo= f'{url}/us-states.json'
-
     for year in years:
         m= folium.Map(location=[48, -102], zoom_start=3)
         if year == 'all':
             temp_df=dataframe.copy()
 
         else:
+            #pdb.set_trace()
             temp_df=dataframe[dataframe['BusinessYear']==year]
             map_columns=temp_df.groupby('StateCode').sum()
-            print(map_columns.head())
+            map_columns.reset_index(inplace=True)
             
-        '''folium.Choropleth(
+            
+        folium.Choropleth(
         geo_data=state_geo,
         name='choropleth',
         data=map_columns,
@@ -214,8 +216,10 @@ def map_series(dataframe,field,years,location=[48, -102], zoom_start=3):
         line_opacity=0.2,
         legend_name=f'Cohabitation Criteria for {year}-{field}').add_to(m)
         folium.LayerControl().add_to(m)
-        m.save(f'/images/cohabitation {year}-{field}.html')
-        '''
+        m
+        #m.save(f'/images/cohabitation {year}-{field}.html')
+      
+      
    
 
 
