@@ -91,7 +91,7 @@ feature_list=['Spouse,Yes','Spouse,No',
 
 def pickle_var(to_be_pickled=feature_list, file_name="pickle"):
     #function was  provided by Nicolas Jacobsohn
-    pickle_dir_name = "data/"
+    pickle_dir_name = "/data/"
     if to_be_pickled is not None:
         pickle.dump(to_be_pickled, open(pickle_dir_name + file_name + ".p", "wb"))
 

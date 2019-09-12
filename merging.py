@@ -11,17 +11,19 @@ as creating universal keys.
  class.
 '''
 
-'''
+
 def clean_files():
-    area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
+    '''contents moved to if name, main section due to time constraint'''
+
+    """ area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
     area_clean=clean_area(area_all)
     network_all=pd.read_csv('data/merged/network_all.csv',low_memory=False)
     network_clean=clean_network(network_all)
     cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
-    cross_clean=clean_cross(cross_all) """
+    cross_clean=clean_cross(cross_all)  """
     rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
     rules_cleaned=clean_rules(rules_all)
-'''
+
 
 
 
@@ -76,7 +78,7 @@ def clean_rules(rules_all):
     return cleaning_file
 
 
-def create_cohabitation_dataframes(rules_cleaned)
+def create_cohabitation_dataframes(rules_cleaned):
 
     '''
     The rules filegroup includes a field on whether cohabitation is required to be
@@ -88,7 +90,9 @@ def create_cohabitation_dataframes(rules_cleaned)
     cohabitation_df['DomParAsSpouse']= cohabitation_df['DomesticPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0)
     cohabitation_df['SameSexAsSpouse']= cohabitation_df['SameSexPartnerAsSpouseIndicator'].apply(lambda x: 1 if x=='Yes'  else 0) 
     depmaxage_df=cohabitation_df[cohabitation_df['DependentMaximumAgRule'] != 'Not Applicable']
-    cohabitiation_fields=list(cohabitation_df.columns.values)
+    cohabitation_fields=list(cohabitation_df.columns.values)
+
+    return cohabitation_df
 
     
 
@@ -127,7 +131,7 @@ The functions below should also be moved into their own class.  They take a list
 fields, map them on US and state maps, and save the maps
 '''
 def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016,'all']\
-            title='Cohabitation Criteria for ', map_area = 'US'):
+            , map_area = 'US'):
 
     #The list below is a manually cleaned version of cohabitation_fields
     default_fields =['Spouse,Yes','Spouse,No','Spouse-YN', 'Adopted Child,Yes',\
@@ -165,12 +169,13 @@ def map_maker(dataframe, input_fields= ['Spouse,Yes'],years=[2014,2015,2016,'all
     
 
     for field in input_fields:
-        map_design=initialize_map_conditions(map_area):
+        map_design=initialize_map_conditions(map_area)
         map_list=map_series(dataframe,field,years,map_design)
-        save_maps(map_list,map_area,years,map_design,title)
+        
 
 
 def initialize_map_conditions(map_area='US'):
+    
     '''
     returns the longitude and latitude and zoom level for each map. 
     More areas will be added.
@@ -178,34 +183,55 @@ def initialize_map_conditions(map_area='US'):
     aliases =['United States','USA','America','United States of America']
     if map_area in aliases:
         map_area = 'US'
-    map_dict={'US':'location=[48, -102], zoom_start=3'\
-                'CO':'location=[]39	-106], zoom_start=6'}
+    map_dict={'US':'[48, -102], zoom_start=3',\
+                'CO':'[39, -106], zoom_start=6'}
 
     return map_dict[map_area]
 
-
-'
-
-
-
+def map_series(dataframe,field,years,location=[48, -102], zoom_start=3):
     
-    
+    url ='https://raw.githubusercontent.com/python-visualization/folium/master/examples/data'
+    state_geo= f'{url}/us-states.json'
 
+    for year in years:
+        m= folium.Map(location=[48, -102], zoom_start=3)
+        if year == 'all':
+            temp_df=dataframe.copy()
 
-
-
-
-
-
-
-
+        else:
+            temp_df=dataframe[dataframe['BusinessYear']==year]
+            map_columns=temp_df.groupby('StateCode').sum()
+            print(map_columns.head())
+            
+        '''folium.Choropleth(
+        geo_data=state_geo,
+        name='choropleth',
+        data=map_columns,
+        columns=['StateCode', field],
+        key_on='feature.id',
+        fill_color='YlGn',
+        fill_opacity=0.7,
+        line_opacity=0.2,
+        legend_name=f'Cohabitation Criteria for {year}-{field}').add_to(m)
+        folium.LayerControl().add_to(m)
+        m.save(f'/images/cohabitation {year}-{field}.html')
+        '''
+   
 
 
 
 if __name__ == "__main__":
-    clean_files()
-    create_cohabitation_dataframes()
-    map_maker(cohabitation_df,)
+
+    """ area_all=pd.read_csv('data/merged/area_all.csv',low_memory=False)
+    area_clean=clean_area(area_all)
+    network_all=pd.read_csv('data/merged/network_all.csv',low_memory=False)
+    network_clean=clean_network(network_all)
+    cross_all=pd.read_csv('data/merged/cross_all.csv',low_memory=False)
+    cross_clean=clean_cross(cross_all)  """
+    rules_all=pd.read_csv('data/merged/rules_all.csv',low_memory=False)
+    rules_cleaned=clean_rules(rules_all)
+    #clean_files()
+    cohabitation_data=create_cohabitation_dataframes(rules_cleaned)
+    make_maps=map_maker(cohabitation_data)
 
     
-
