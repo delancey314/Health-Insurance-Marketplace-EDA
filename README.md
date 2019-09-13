@@ -8,7 +8,7 @@
 
 ## Requirements
 
-A copy of the datasets was pulled from [Kaggle] (https://www.kaggle.com/hhs/health-insurance-marketplace). The original dataset are hosted at [CMS.gov] (https://www.kaggle.com/hhs/health-insurance-marketplace).  
+A copy of the datasets was pulled from [Kaggle](https://www.kaggle.com/hhs/health-insurance-marketplace). The original dataset are hosted at [CMS.gov](https://www.kaggle.com/hhs/health-insurance-marketplace).  
 
     
 ## The Data 
@@ -16,32 +16,36 @@ A copy of the datasets was pulled from [Kaggle] (https://www.kaggle.com/hhs/heal
 ### Benefits and Cost Sharing 
 Plan variant-level data on essential health benefits, coverage limits, and cost sharing. Files and variables related to this set are labelled **cost**.
 
----|2014|	2015|	2016|	Merged|	Cleaned|Sample|		
----|---|---|---|---|---|---
-Rows|	1164869|2079286|1804253|5048408|---|---
-Fields|32|32|30|32|---|---
-Size|284.4MB|507.6MB|413MB|1.2GB|---|---
+---|2014|	2015|	2016|	Merged
+--- | --- |--- | --- | --- | ---
+Rows |	1164869 |2079286 |1804253 | 5048408
+Fields |32 |32 |30 |32 
+Size|284.4MB|507.6MB|413MB|1.2GB
 
 ## Business Rules  
 Plan-level data on rating business rules, such as allowed relationships (e.g., spouse, dependents) and tobacco use.  Files and variables related to this set are labelled **rules**.		
-	Rows	2103	10095	8887	21085	20866	
-	Fields	23	23	23	24	17	
-	Size	378KB	1.8MB	1.6MB	4MB	2.9MB	
-##### The increase in fields for the merged file is due to a change of keys
+---|2014|	2015|	2016|	Merged|	Cleaned
+Rows|	2103|	10095|	8887|	21085|	20866	
+Fields|23|23|23|24|17
+Size|378KB|1.8MB|1.6MB|	4MB|2.9MB	
+###### The increase in fields for the merged file is due to a change of keys
 
 ## Network	
-Provides the details for each healthcare network and a url to the network's website.Files and variables related to this set are labelled **network**.		
-Rows	937	1459	1426		3822	
-Fields	14	14	14	15	5	
-Size	102KB	160KB	156KB	478KB	149.4
-	##### The increase in fields for the merged file is naming inconsistency of the Dental Only plans
+Provides the details for each healthcare network and a url to the network's website.Files and variables related to this set are labelled **network**.	
+---|2014|2015|2016|Merged|Cleaned
+---|---|---|---|---|---
+Rows|937|1459|1426|3822	
+Fields|14|14|14|15|5	
+Size|102KB|160KB|156KB|478KB|149.4KB
+###### The increase in fields for the merged file is naming inconsistency of the Dental Only plans
 						
 ## Plan Attributes 
-Plan-level data on maximum out of pocket payments, deductibles, HSA eligibility, formulary ID, and other plan attributes.	Files and variables related to this set are labelled **attr**.		
+Plan-level data on maximum out of pocket payments, deductibles, HSA eligibility, formulary ID, and other plan attributes. Files and variables related to this set are labelled **attribute**.		
+--|2014|2015|2016|Merged
+Rows|18719|31253|27381|77353		
+Fields|126|126|151|176		
+Size|18MB|30MB|31.5MB|104.5MB	
 
-	Rows	18719	31253	27381	77353		
-	Fields	126	126	151	176		
-	Size	18MB	30MB	31.5MB	104.5MB		
 ## Rate
 Plan-level data on individual rates based on an eligible subscriber’s age, tobacco use, and geographic location, and family-tiers.Files and variables related to this set are labelled **rate**.		
 
