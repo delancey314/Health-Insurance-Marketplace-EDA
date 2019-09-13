@@ -41,10 +41,10 @@ Size|102KB|160KB|156KB|478KB|149.4KB
 						
 ## Plan Attributes 
 Plan-level data on maximum out of pocket payments, deductibles, HSA eligibility, formulary ID, and other plan attributes. Files and variables related to this set are labelled **attribute**.		
---|2014|2015|2016|Merged
-Rows|18719|31253|27381|77353		
-Fields|126|126|151|176		
-Size|18MB|30MB|31.5MB|104.5MB	
+	--2014|2015|2016|Merged
+	Rows|18719|31253|27381|77353		
+	Fields|126|126|151|176		
+	Size 18MB|30MB|31.5MB|104.5MB	
 
 ## Rate
 Plan-level data on individual rates based on an eligible subscriber’s age, tobacco use, and geographic location, and family-tiers.Files and variables related to this set are labelled **rate**.		
